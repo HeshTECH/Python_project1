@@ -1,0 +1,22 @@
+
+BMI Calculator (Python)
+
+
+w=float( input("what is your weight?:"))
+h=float(input("what is your height in cm?:"))
+bmi=w/(h/100)**2
+BMI= round(bmi,1)
+print("your BMI is {BMI}")
+
+if BMI <= 18.4:
+    print("You are underweight.")
+elif BMI <= 24.9:
+    print("You are healthy.")
+elif BMI <= 29.9:
+    print("You are over weight.")
+elif BMI <= 34.9:
+    print("You are severely over weight.")
+elif BMI <= 39.9:
+    print("You are obese.")
+else:
+    print("You are severely obese.")
